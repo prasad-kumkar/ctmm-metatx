@@ -96,15 +96,15 @@ contract("LMSR gas costs", function([lmsrOwner, oracle, trader]) {
     }
 
     shouldBeCreatedAndLiquid(1, 2);
-    // shouldBeCreatedAndLiquid(1, 3);
-    // shouldBeCreatedAndLiquid(1, 4);
-    // shouldBeCreatedAndLiquid(1, 10);
-    // // shouldBeCreatedAndLiquid(1, 73);
-    // shouldBeCreatedAndLiquid(2, 2);
-    // shouldBeCreatedAndLiquid(2, 3);
-    // shouldBeCreatedAndLiquid(2, 4);
-    // // shouldBeCreatedAndLiquid(2, 7);
-    // shouldBeCreatedAndLiquid(3, 2);
-    // shouldBeCreatedAndLiquid(3, 3);
-    // shouldBeCreatedAndLiquid(4, 2);
+    shouldBeCreatedAndLiquid(1, 3);
+    shouldBeCreatedAndLiquid(1, 4);
+    shouldBeCreatedAndLiquid(1, 10);
+    // shouldBeCreatedAndLiquid(1, 73);
+    shouldBeCreatedAndLiquid(2, 2);
+    shouldBeCreatedAndLiquid(2, 3);
+    shouldBeCreatedAndLiquid(2, 4);
+    // shouldBeCreatedAndLiquid(2, 7);
+    shouldBeCreatedAndLiquid(3, 2);
+    shouldBeCreatedAndLiquid(3, 3);
+    shouldBeCreatedAndLiquid(4, 2);
 });
