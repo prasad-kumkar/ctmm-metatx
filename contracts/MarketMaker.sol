@@ -3,9 +3,9 @@ import { Ownable } from "./utils/Ownable.sol";
 import { IERC20 } from "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 import { SafeMath } from "openzeppelin-solidity/contracts/math/SafeMath.sol";
 import { SignedSafeMath } from "@gnosis.pm/util-contracts/contracts/SignedSafeMath.sol";
-import { ERC1155TokenReceiver } from "@gnosis.pm/conditional-tokens-contracts/contracts/ERC1155/ERC1155TokenReceiver.sol";
-import { CTHelpers } from "@gnosis.pm/conditional-tokens-contracts/contracts/CTHelpers.sol";
-import { ConditionalTokens } from "@gnosis.pm/conditional-tokens-contracts/contracts/ConditionalTokens.sol";
+import { ERC1155TokenReceiver } from "./conditional-tokens/ERC1155/ERC1155TokenReceiver.sol";
+import { CTHelpers } from "./conditional-tokens/CTHelpers.sol";
+import { ConditionalTokens } from "./conditional-tokens/ConditionalTokens.sol";
 import { Whitelist } from "./Whitelist.sol";
 
 import { EIP712MetaTransaction } from './metatx/EIP712MetaTransaction.sol';

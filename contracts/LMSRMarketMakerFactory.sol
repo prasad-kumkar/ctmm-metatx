@@ -1,12 +1,12 @@
 pragma solidity ^0.5.1;
 
 import { IERC20 } from "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
-import { ConditionalTokens } from "@gnosis.pm/conditional-tokens-contracts/contracts/ConditionalTokens.sol";
-import { CTHelpers } from "@gnosis.pm/conditional-tokens-contracts/contracts/CTHelpers.sol";
+import { ConditionalTokens } from "./conditional-tokens/ConditionalTokens.sol";
+import { CTHelpers } from "./conditional-tokens/CTHelpers.sol";
 import { ConstructedCloneFactory } from "@gnosis.pm/util-contracts/contracts/ConstructedCloneFactory.sol";
 import { LMSRMarketMaker } from "./LMSRMarketMaker.sol";
 import { Whitelist } from "./Whitelist.sol";
-import { ERC1155TokenReceiver } from "@gnosis.pm/conditional-tokens-contracts/contracts/ERC1155/ERC1155TokenReceiver.sol";
+import { ERC1155TokenReceiver } from "./conditional-tokens/ERC1155/ERC1155TokenReceiver.sol";
 
 import "./metatx/EIP712MetaTransaction.sol";
 
