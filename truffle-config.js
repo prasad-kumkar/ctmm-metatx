@@ -1,7 +1,10 @@
 require("chai/register-should");
 require('mocha-steps')
 
-const config = {
+const HDWalletProvider = require("@truffle/hdwallet-provider")
+require('dotenv').config();
+
+module.exports = {
     networks: {
         mainnet: {
             host: "localhost",
@@ -32,7 +35,14 @@ const config = {
             host: "localhost",
             port: 8545,
             network_id: "*",
-	},
+	    },
+        matic: {
+            provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, `https://rpc-mumbai.maticvigil.com`),
+            network_id: 80001,
+            confirmations: 2,
+            timeoutBlocks: 200,
+            skipDryRun: true
+        },
     },
     mocha: {
         enableTimeouts: false,
@@ -56,7 +66,10 @@ const config = {
 
     plugins: [
         'truffle-plugin-verify'
-    ]
-}
+    ],
 
-module.exports = config
+    api_keys: {
+        etherscan: process.env.ETHERSCAN_API_KEY,
+        polygonscan: process.env.POLYSCAN_API_KEY
+    }
+}
